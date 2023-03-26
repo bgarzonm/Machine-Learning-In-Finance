@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 data = yf.download(tickers="BTC-USD", period="10mo", interval="1d")
 data.to_csv("../../ML_finance_python/data/BTC-USD.csv")
 
+data_apple = yf.download(tickers="AAPL", period="12mo", interval="1d")
+data_apple.to_csv("../../ML_finance_python/data/apple.csv")
 
 data = data[["Adj Close", "Volume"]]
 
