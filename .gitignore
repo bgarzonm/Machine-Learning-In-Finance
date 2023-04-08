@@ -91,3 +91,4 @@ target/
 #API keys
 *.txt
 
+.Rproj.user
